@@ -1,0 +1,20 @@
+// 2016-05-10 v.1 utils,base는 임의로 변경 불가
+@charset 'utf-8';
+
+/* utils */
+@import 'utils/mixins'; // 믹스인
+@import 'utils/variables'; // 변수
+
+/* base */
+@import 'base/reset'; // 리셋
+@import 'base/common'; // 공통
+@import 'base/layout'; // 레이아웃
+
+/* components */
+@import 'components/form'; // 폼 요소
+@import 'components/table'; // 테이블 요소
+@import 'components/button'; // 버튼 요소
+@import 'components/popup'; // 버튼 요소
+
+/* pages */
+@import 'pages/home'; // 메인 페이지

@@ -1,0 +1,53 @@
+// 공통만 변수로 선언하고, 개별적인 스타일은 해당 클래스에 직접 선언한다.
+
+// 글꼴
+$font-stack: (
+    AppleSDGothicNeo,
+    HelveticaNeue,
+    sans-serif,
+);
+
+// 굵기
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-bold: 600;
+
+// 크기
+$font-size-small: 12px;
+$font-size-regular: 16px;
+$font-size-large: 24px;
+$font-size-xlarge: 32px;
+
+// 색상
+$black: #000;
+$white: #fff;
+$color-default: #ddd; // 기본 컬러
+$color-primary: #ff2b74; // 주요 색상
+$color-success: #48daca; // 서브 메인
+$color-active: #6D87A7; // 활성화
+$color-disabled: #038144; // 비활성화
+$color-warning: #F9E055; // 경고 색상
+$color-error: #811702; // 오류 색상
+
+$color-shadow: rgba($black, 0.5);
+$color-text: $color-default;
+$color-text-heading: $color-primary;
+$color-text-strong: $color-success;
+$color-text-em: $color-primary;
+
+$color-text-link: $color-primary;
+$color-text-link-visited: $color-primary;
+$color-text-link-hover: $color-primary;
+
+$color-background: $white;
+$color-background-main: $color-default;
+$color-background-sub: $color-default;
+
+$color-border: $color-default;
+$color-border-body: $black;
+$color-border-header: $black;
+
+// resolutions
+$mobile: 320px;
+$tablet: 768px;
+$screen: 1024px;

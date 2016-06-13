@@ -1,0 +1,19 @@
+/* TABLE CSS */
+table {
+    position:relative;
+    width:100%;
+    caption {
+        position: absolute;
+        overflow: hidden;
+        left: -9999px;
+        width: 1px;
+        height: 1px;
+        font-size: 0;
+        line-height: 0;
+        text-indent: -9999px;
+    }
+}
+
+.tbl {
+    // css style..
+}

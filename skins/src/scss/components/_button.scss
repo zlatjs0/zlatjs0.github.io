@@ -1,0 +1,26 @@
+/* BUTTON CSS */
+/* default-btn */
+.rap_btn {}
+.btn {
+    span {
+        // css style..
+    }
+}
+.btn_more_list {
+    @include prefix(border-radius, 30px);
+    width:58px;
+    height:58px;
+    border:1px solid $color-primary;
+    text-align:center;
+    span {
+        color:$color-primary;
+        font-size:16px;
+    }
+}
+
+/* link-btn */
+.link_btn {
+    span {
+        // css style..
+    }
+}

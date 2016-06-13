@@ -1,0 +1,111 @@
+// 2016-05-10 v.1 임의로 변경 불가
+
+@mixin basic-font {
+    font-size: 14px;
+    line-height: 18px;
+    color: $font-main-color;
+    font-family: $font-stack;
+}
+@mixin clearfix {
+    &::after {
+        content: '';
+        display: table;
+        clear: both;
+        *zoom: 1;
+    }
+}
+@mixin ir-pm {
+    display: block;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+@mixin ir-wa {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+@mixin sc-out {
+    overflow: hidden;
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+@mixin inline-type {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    vertical-align: middle;
+}
+@mixin text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+@mixin text-overflow-multi($maxHeight, $line) {
+    max-height: $maxHeight;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: $line;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+@mixin prefix($property, $value) {
+    #{-webkit-$property}: $value;
+       #{-moz-$property}: $value;
+            #{$property}: $value;
+}
+@mixin box-sizing {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+@mixin frame-line($size, $color) {
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border: $size solid $color;
+        @include box-sizing;
+    }
+}
+@mixin prefix($property, $value) {
+    #{-webkit-$property}: $value;
+       #{-moz-$property}: $value;
+            #{$property}: $value;
+}
+@mixin easeInOut($val) {
+    -webkit-transition:all $val ease-in-out;
+            transition:all $val ease-in-out;
+}
+@mixin fadeIn($val) {
+    -webkit-animation:fadeIn ease-in 1;
+       -moz-animation:fadeIn ease-in 1;
+            animation:fadeIn ease-in 1;
+    -webkit-animation-fill-mode:forwards;
+       -moz-animation-fill-mode:forwards;
+            animation-fill-mode:forwards;
+    -webkit-animation-duration:$val;
+       -moz-animation-duration:$val;
+            animation-duration:$val;
+}
+@mixin respond-to( $media ) {
+    @if $media == medium-screens {
+        @media only screen and ( min-width: $tablet ) { @content; }
+    }
+    @else if $media == wide-screens {
+        @media only screen and ( min-width: $screen ) { @content; }
+    }
+}

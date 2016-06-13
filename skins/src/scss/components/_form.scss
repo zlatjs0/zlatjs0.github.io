@@ -1,0 +1,55 @@
+/* FORM CSS */
+form {
+    fieldset {
+    	position:relative;
+    	width:100%;
+        legend {
+            position: absolute;
+        	overflow: hidden;
+            left: -9999px;
+            width: 1px;
+            height: 1px;
+            font-size: 0;
+            line-height: 0;
+            text-indent: -9999px;
+        }
+    }
+}
+
+.rap_inp {
+
+}
+.inp {
+
+}
+.inp_check {
+
+}
+.inp_radio {
+
+}
+.inp_file {
+
+}
+.inp_search {
+
+}
+.textarea {
+
+}
+.iframe {
+
+}
+.textarea {
+
+}
+
+.rap_sel {
+
+}
+.sel {
+
+}
+.sel select {
+
+}
